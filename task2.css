@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+}
+.header{
+    display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   padding-top: 20px;
+}
+.logo{
+  background-color: white;
+  color: blue;
+  font-size: 25px;
+  margin-left: 40px;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover ,.active{
+    color:#e74c3c;
+    border-bottom: 2px solid #e74c3c;
+}
+.btn{
+    margin-right: 40px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.dots{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    z-index: 0;
+}
+
+.dots div{
+    width: 8px;
+    height: 8px;
+    background-color:#8034eb ;
+    border-radius: 50%;
+}
+.top_dots{
+    top: 2%;
+    left: 22%;
+    width: 28px;
+    height: 41px;
+}
+.bottom_dots{
+    bottom: 8%;
+    left: 22%;
+    width: 28px;
+    height: 41px;
+}
+.container{
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 13%;
+    border-radius: 0 0px 400px 0;
+    background-color: #8034eb;
+    z-index: -1;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.text_content{
+    width: 40%;
+    padding: 70px;
+    margin-top: 90px;
+}
+.text_content p{
+    font-size: 15px;
+    margin-bottom: 7px;
+    word-spacing: 2px;
+}
+.title_p{
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.539) ,rgba(255, 0, 0, 0.849));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text_content h2{
+    font-size: 59px;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+#name{
+    color: #e74c3c;
+}
+.text_content button{
+    margin-top: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    border: none;
+    font-size: 20px;
+}
+.text_content button:hover{
+    background-color: black;
+    color: white;
+}
+.picture{
+    margin-right: -105px;
+    width: 380px;
+    height: 530px;
+    margin-top: 35px;
+    border-radius: 20px;
+    border: 7px solid white;
+}
+.right_sidebar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 20%;
+    border-radius: 0px 0px 300px 300px ;
+    background-color: #8034eb;
+    z-index: -1;
+}
